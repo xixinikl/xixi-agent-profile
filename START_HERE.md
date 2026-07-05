@@ -23,7 +23,11 @@ https://github.com/xixinikl/xixi-agent-profile
 3. `ENGINEERING_WORKFLOW.md`
 4. `UI_PREFERENCES.md`
 5. `PORTABILITY.md`
-6. `MEMORY_UPDATE_PROTOCOL.md`
+6. `OPERATING_SYSTEM.md`
+7. `PROJECTS.md`
+8. `CONVERSATION_HANDOFF.md`
+9. `MEMORY_UPDATE_PROTOCOL.md`
+10. `MAINTENANCE.md`
 
 然后进入当前项目，读取项目自己的：
 
@@ -47,4 +51,4 @@ npm run doctor
 ## 任务结束前
 
 按 `MEMORY_UPDATE_PROTOCOL.md` 检查是否需要更新长期记忆。
-
+如果涉及项目状态变化，同时检查 `PROJECTS.md` 和项目自己的 `CURRENT_STATUS.md`。

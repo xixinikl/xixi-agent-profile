@@ -26,7 +26,11 @@ START_HERE.md
 - `ENGINEERING_WORKFLOW.md`：工程化开发方式；
 - `UI_PREFERENCES.md`：界面和体验偏好；
 - `PORTABILITY.md`：跨电脑、跨 Codex 使用方式；
+- `OPERATING_SYSTEM.md`：个人层、项目层、对话层的整体协作制度；
+- `PROJECTS.md`：长期项目索引；
+- `CONVERSATION_HANDOFF.md`：多对话框和换 Agent 交接规范；
 - `MEMORY_UPDATE_PROTOCOL.md`：什么时候更新记忆、写到哪里、怎么提交；
+- `MAINTENANCE.md`：记忆维护节奏；
 - `templates/project-memory/`：新项目记忆模板。
 
 ## 与项目仓库的关系

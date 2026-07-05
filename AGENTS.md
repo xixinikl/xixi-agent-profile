@@ -19,7 +19,11 @@
 4. `ENGINEERING_WORKFLOW.md`
 5. `UI_PREFERENCES.md`
 6. `PORTABILITY.md`
-7. `MEMORY_UPDATE_PROTOCOL.md`
+7. `OPERATING_SYSTEM.md`
+8. `PROJECTS.md`
+9. `CONVERSATION_HANDOFF.md`
+10. `MEMORY_UPDATE_PROTOCOL.md`
+11. `MAINTENANCE.md`
 
 然后进入具体项目，读取项目自己的入口文件。
 
@@ -33,6 +37,7 @@
 - 不使用 `git reset --hard` 等破坏性操作，除非用户明确要求。
 - 对长期项目，结束前必须留下下一步和交接信息。
 - 当用户表达长期偏好或纠正可复用错误时，按 `MEMORY_UPDATE_PROTOCOL.md` 更新记忆。
+- 多对话框或多 Agent 协作时，按 `CONVERSATION_HANDOFF.md` 做交接。
 
 ## 用户数据硬规则
 

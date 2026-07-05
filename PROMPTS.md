@@ -8,6 +8,12 @@
 先读我的 Agent Profile，再处理当前项目。
 ```
 
+## 多对话框继续旧项目
+
+```text
+先读我的 Agent Profile，按 CONVERSATION_HANDOFF.md 接手。再读当前项目的 AGENTS.md、CURRENT_STATUS.md 和 TASKS.md，运行 doctor 后告诉我当前分支、任务、环境状态和下一步。
+```
+
 ## 全新 Codex
 
 ```text
@@ -27,3 +33,8 @@
 结束前按 MEMORY_UPDATE_PROTOCOL.md 检查是否需要更新长期记忆；该写就提交推送，不需要就说明没有新增长期记忆。
 ```
 
+## 整理体系
+
+```text
+按 xixi-agent-profile 的 OPERATING_SYSTEM.md 和 MAINTENANCE.md 做一次轻量整理：检查项目索引、活跃项目状态、记忆是否有冲突，以及是否需要更新长期规则。
+```

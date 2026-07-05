@@ -18,6 +18,7 @@
 3. `ENGINEERING_WORKFLOW.md`
 4. `UI_PREFERENCES.md`
 5. `PORTABILITY.md`
+6. `MEMORY_UPDATE_PROTOCOL.md`
 
 然后进入具体项目，读取项目自己的入口文件。
 
@@ -30,6 +31,7 @@
 - 不覆盖用户或前序 Agent 的未提交改动。
 - 不使用 `git reset --hard` 等破坏性操作，除非用户明确要求。
 - 对长期项目，结束前必须留下下一步和交接信息。
+- 当用户表达长期偏好或纠正可复用错误时，按 `MEMORY_UPDATE_PROTOCOL.md` 更新记忆。
 
 ## 用户数据硬规则
 
@@ -58,4 +60,3 @@
 下一步：
 风险/注意：
 ```
-

@@ -23,6 +23,7 @@ AGENTS.md
 - `ENGINEERING_WORKFLOW.md`：工程化开发方式；
 - `UI_PREFERENCES.md`：界面和体验偏好；
 - `PORTABILITY.md`：跨电脑、跨 Codex 使用方式；
+- `MEMORY_UPDATE_PROTOCOL.md`：什么时候更新记忆、写到哪里、怎么提交；
 - `templates/project-memory/`：新项目记忆模板。
 
 ## 与项目仓库的关系
@@ -49,4 +50,3 @@ https://github.com/xixinikl/xixi-agent-profile
 然后读取当前项目的 AGENTS.md、CURRENT_STATUS.md、TASKS.md 和 doc/ENVIRONMENT.md。
 先运行项目的 doctor 自检命令，只报告环境状态，不要先修改代码。
 ```
-

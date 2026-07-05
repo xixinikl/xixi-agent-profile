@@ -14,11 +14,14 @@
 所有 Agent 先读：
 
 ```text
-AGENTS.md
+START_HERE.md
 ```
 
 然后按任务类型读取：
 
+- `START_HERE.md`：最短入口；
+- `PROMPTS.md`：用户可复制的短口令；
+- `AGENTS.md`：全局 Agent 规则；
 - `USER_PREFERENCES.md`：用户沟通、产品、审美偏好；
 - `ENGINEERING_WORKFLOW.md`：工程化开发方式；
 - `UI_PREFERENCES.md`：界面和体验偏好；
@@ -46,7 +49,7 @@ AGENTS.md
 先读取我的个人 Agent Profile 仓库：
 https://github.com/xixinikl/xixi-agent-profile
 
-按其中 AGENTS.md 的规则理解我的长期偏好。
+按其中 START_HERE.md 的规则理解我的长期偏好。
 然后读取当前项目的 AGENTS.md、CURRENT_STATUS.md、TASKS.md 和 doc/ENVIRONMENT.md。
 先运行项目的 doctor 自检命令，只报告环境状态，不要先修改代码。
 ```

@@ -9,7 +9,9 @@
 3. `TASKS.md`
 4. `错误复盘.md`
 5. `doc/ENVIRONMENT.md`
-6. 与任务相关的代码和文档
+6. `.agent-profile.json`
+7. `doc/retrospectives/` 中与任务相关的复盘
+8. 与任务相关的代码和文档
 
 ## 环境检查
 
@@ -17,10 +19,17 @@
 {{DOCTOR_COMMAND}}
 ```
 
+接手长期任务前，运行个人 Profile 的项目体检：
+
+```bash
+bash /path/to/xixi-agent-profile/scripts/profile-doctor.sh --project .
+```
+
 ## 项目硬规则
 
 - {{PROJECT_RULE_1}}
 - {{PROJECT_RULE_2}}
+- 每日验收出现 `conditional`、`fail`、自动修复或未覆盖项时，必须写入 `doc/retrospectives/` 候选；不要把单次问题直接升级为全局规则。
 
 ## 交接格式
 
@@ -33,4 +42,3 @@
 下一步：
 风险/注意：
 ```
-

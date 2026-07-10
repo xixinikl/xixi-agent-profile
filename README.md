@@ -1,6 +1,6 @@
 # Xixi Agent Profile
 
-这是用户的个人 Agent 总记忆仓库，用来跨电脑、跨 Codex、跨项目复用协作习惯。
+这是用户的个人 Agent 总记忆仓库，用来跨电脑、跨 Codex、跨项目复用协作习惯，并让项目经验以受控方式持续回流。
 
 它解决的问题：
 
@@ -8,6 +8,31 @@
 - 新项目启动时，先建立项目记忆，再写功能；
 - 旧项目接手时，先读全局习惯，再读项目规则；
 - Agent 犯过的错能沉淀为防复发规则。
+- 每日验收、每周回顾和质量台的结论能转成可检索的项目经验。
+
+## 成长闭环
+
+```text
+接入项目 -> 每日验收 -> 项目复盘候选 -> 每周筛选 -> 全局经验 -> 下一次项目接手
+```
+
+这不是让日志自动淹没规则库：每日结论先写入项目级候选；只有重复出现、跨项目有效且有证据的经验，才由每周回顾提升到 `LEARNINGS.md`。
+
+## 可执行入口
+
+```bash
+# 检查个人 Profile 本身
+bash scripts/profile-doctor.sh
+
+# 将某个仓库接入项目记忆骨架（默认不覆盖已有文件）
+bash scripts/onboard-project.sh --target /path/to/project --name "项目名" --repo "https://github.com/owner/repo"
+
+# 检查已接入的项目
+bash scripts/profile-doctor.sh --project /path/to/project
+
+# 把每日验收报告沉淀为项目复盘候选
+bash scripts/ingest-acceptance-report.sh --project /path/to/project --report /path/to/report.md
+```
 
 ## 第一入口
 
@@ -31,6 +56,9 @@ START_HERE.md
 - `CONVERSATION_HANDOFF.md`：多对话框和换 Agent 交接规范；
 - `MEMORY_UPDATE_PROTOCOL.md`：什么时候更新记忆、写到哪里、怎么提交；
 - `MAINTENANCE.md`：记忆维护节奏；
+- `GROWTH_LOOP.md`：每日验收、复盘、全局经验的闭环规则；
+- `LEARNINGS.md`：已验证、可跨项目复用的经验；
+- `scripts/`：项目接入、体检、报告沉淀的可执行工具；
 - `templates/project-memory/`：新项目记忆模板。
 
 ## 与项目仓库的关系
@@ -46,6 +74,7 @@ START_HERE.md
 - `TASKS.md`
 - `错误复盘.md`
 - `doc/ENVIRONMENT.md`
+- `.agent-profile.json`
 
 ## 给全新 Codex 的第一句话
 

@@ -38,6 +38,8 @@
 - 对长期项目，结束前必须留下下一步和交接信息。
 - 当用户表达长期偏好或纠正可复用错误时，按 `MEMORY_UPDATE_PROTOCOL.md` 更新记忆。
 - 多对话框或多 Agent 协作时，按 `CONVERSATION_HANDOFF.md` 做交接。
+- 长期项目必须通过 `scripts/profile-doctor.sh --project <path>`；缺失记忆骨架时，先接入再开发。
+- 每日验收和每周回顾产生的经验，按 `GROWTH_LOOP.md` 回流；不要把单次失败直接写成全局规则。
 
 ## 用户数据硬规则
 

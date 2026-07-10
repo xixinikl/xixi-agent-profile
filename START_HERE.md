@@ -36,10 +36,17 @@ https://github.com/xixinikl/xixi-agent-profile
 3. `TASKS.md`
 4. `doc/ENVIRONMENT.md`
 
-开始修改前先运行项目自检命令，例如：
+开始修改前先运行 Profile 与项目自检：
 
 ```bash
+bash /path/to/xixi-agent-profile/scripts/profile-doctor.sh --project .
 npm run doctor
+```
+
+如果项目尚未接入，先运行：
+
+```bash
+bash /path/to/xixi-agent-profile/scripts/onboard-project.sh --target . --name "项目名" --repo "https://github.com/owner/repo"
 ```
 
 ## 如果用户忘记提醒
@@ -52,3 +59,4 @@ npm run doctor
 
 按 `MEMORY_UPDATE_PROTOCOL.md` 检查是否需要更新长期记忆。
 如果涉及项目状态变化，同时检查 `PROJECTS.md` 和项目自己的 `CURRENT_STATUS.md`。
+如果本次使用了每日验收，按 `GROWTH_LOOP.md` 将报告沉淀为项目复盘候选。

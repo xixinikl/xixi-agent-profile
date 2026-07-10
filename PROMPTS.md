@@ -38,3 +38,23 @@
 ```text
 按 xixi-agent-profile 的 OPERATING_SYSTEM.md 和 MAINTENANCE.md 做一次轻量整理：检查项目索引、活跃项目状态、记忆是否有冲突，以及是否需要更新长期规则。
 ```
+# 常用短口令
+
+## 接手长期项目
+
+```text
+先读取我的个人 Agent Profile 和当前项目的 AGENTS.md、CURRENT_STATUS.md、TASKS.md、错误复盘.md、doc/ENVIRONMENT.md、.agent-profile.json。
+运行 Profile doctor 和项目 doctor，只报告事实；确认 Git 状态后再开始任务。
+```
+
+## 接入新项目
+
+```text
+把当前项目接入 xixi-agent-profile：创建项目记忆骨架、.agent-profile.json、复盘目录和环境说明；不得覆盖既有文件。完成后运行 profile doctor，并报告实际创建文件与未验证项。
+```
+
+## 每日验收后回流
+
+```text
+按每日验收工厂运行低成本验收。对于 conditional、fail、自动修复或未覆盖项，把报告沉淀为项目 doc/retrospectives 候选；周检才决定是否把重复且可复用的经验升级到个人 Profile 的 LEARNINGS.md。
+```

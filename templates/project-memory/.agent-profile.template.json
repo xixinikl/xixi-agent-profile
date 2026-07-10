@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "profileRepository": "https://github.com/xixinikl/xixi-agent-profile",
+  "projectName": "{{PROJECT_NAME}}",
+  "repository": "{{PROJECT_REPOSITORY}}",
+  "doctorCommand": "{{DOCTOR_COMMAND}}",
+  "qualityDashboardUrl": "{{QUALITY_DASHBOARD_URL}}",
+  "retrospectiveDirectory": "doc/retrospectives"
+}

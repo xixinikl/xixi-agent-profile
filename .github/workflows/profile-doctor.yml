@@ -1,0 +1,19 @@
+name: Profile doctor
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  doctor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate profile contract
+        run: bash scripts/profile-doctor.sh
+      - name: Verify shell syntax
+        run: bash -n scripts/*.sh

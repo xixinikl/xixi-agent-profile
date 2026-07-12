@@ -10,11 +10,11 @@
 | 当前状态 | 使用中，是跨电脑恢复个人偏好的事实源。 |
 | 新电脑恢复 | 安装 `xixi-dev-system` 后会自动同步；也可单独 clone 后从 `START_HERE.md` 开始读取。 |
 
-这是用户的个人 Agent 总记忆仓库，用来跨电脑、跨 Codex、跨项目复用协作习惯，并让项目经验以受控方式持续回流。
+这是 Profile owner（xixinikl）的个人 Agent 总记忆仓库，用来跨电脑、跨 Codex、跨项目复用协作习惯，并让项目经验以受控方式持续回流。
 
 它解决的问题：
 
-- 换公司电脑、个人电脑或全新 Codex 时，不从零解释用户偏好；
+- 换公司电脑、个人电脑或全新 Codex 时，不从零解释 Profile owner 偏好；
 - 新项目启动时，先建立项目记忆，再写功能；
 - 旧项目接手时，先读全局习惯，再读项目规则；
 - Agent 犯过的错能沉淀为防复发规则。
@@ -55,16 +55,24 @@ START_HERE.md
 然后按任务类型读取：
 
 - `START_HERE.md`：最短入口；
-- `PROMPTS.md`：用户可复制的短口令；
+- `GLOSSARY.md`：术语表，区分 Profile owner（xixinikl）、产品用户、Agent 和项目；
+- `WORKFLOW_INDEX.md`：所有工作流的总索引，避免 Profile owner 背长提示词；
+- `PROMPTS.md`：Profile owner 可复制的短口令；
 - `AGENTS.md`：全局 Agent 规则；
-- `USER_PREFERENCES.md`：用户沟通、产品、审美偏好；
+- `USER_PREFERENCES.md`：Profile owner 沟通、产品、审美偏好；
 - `ENGINEERING_WORKFLOW.md`：工程化开发方式；
+- `INDUSTRIAL_WORKFLOW.md`：工业化开发总流程，默认接入 standard-project-workflow；
+- `PREVIEW_WORKFLOW.md`：及时预览、分支预览、封装预览的协作规则；
+- `PROJECT_ONBOARDING.md`：让任意项目接入本系统的最小步骤；
 - `UI_PREFERENCES.md`：界面和体验偏好；
 - `PORTABILITY.md`：跨电脑、跨 Codex 使用方式；
 - `OPERATING_SYSTEM.md`：个人层、项目层、对话层的整体协作制度；
 - `PROJECTS.md`：长期项目索引；
+- `scripts/discover_projects.py`：备用的只读本机Git扫描器，使用`--owner xixinikl`限定归属范围；
 - `CONVERSATION_HANDOFF.md`：多对话框和换 Agent 交接规范；
 - `MEMORY_UPDATE_PROTOCOL.md`：什么时候更新记忆、写到哪里、怎么提交；
+- `CDS_GOAL_WORKFLOW.md`：长期Goal的权威结构、阶段证据和完成审计；
+- `EVIDENCE_LEARNING_WORKFLOW.md`：按本机Git归属扫描项目、生成候选并晋升系统经验；
 - `MAINTENANCE.md`：记忆维护节奏；
 - `GROWTH_LOOP.md`：每日验收、复盘、全局经验的闭环规则；
 - `LEARNINGS.md`：已验证、可跨项目复用的经验；
@@ -73,7 +81,7 @@ START_HERE.md
 
 ## 与项目仓库的关系
 
-本仓库记住“用户是谁、喜欢怎么协作”。
+本仓库记住“Profile owner（xixinikl）是谁、喜欢怎么协作”。
 
 具体项目仓库记住“这个项目是什么、怎么跑、当前做到哪”。
 

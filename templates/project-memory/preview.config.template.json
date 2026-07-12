@@ -1,0 +1,21 @@
+{
+  "schema": "xixi.preview.v1",
+  "project": "{{PROJECT_NAME}}",
+  "status": "developing",
+  "branch": "{{BRANCH}}",
+  "runtime": {
+    "type": "{{RUNTIME_TYPE}}",
+    "start": "{{START_COMMAND}}",
+    "stop": "{{STOP_COMMAND}}",
+    "health": "{{HEALTH_URL_OR_COMMAND}}"
+  },
+  "pages": [
+    {
+      "name": "{{PAGE_NAME}}",
+      "url": "{{PAGE_URL}}",
+      "status": "{{PAGE_STATUS}}",
+      "notes": "{{PAGE_NOTES}}"
+    }
+  ],
+  "updated_at": "{{YYYY-MM-DD}}"
+}

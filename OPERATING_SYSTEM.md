@@ -6,13 +6,13 @@
 
 | 层级 | 作用 | 事实源 |
 |---|---|---|
-| 个人层 | 记住用户长期偏好、审美、工程习惯 | `xixi-agent-profile` |
+| 个人层 | 记住 Profile owner 长期偏好、审美、工程习惯 | `xixi-agent-profile` |
 | 项目层 | 记住项目规则、环境、任务、当前状态 | 具体项目仓库 |
 | 对话层 | 处理当前这一次任务 | 当前聊天和工具输出 |
 
 优先级：
 
-1. 用户当前明确指令；
+1. Profile owner 当前明确指令；
 2. 当前项目规则和状态；
 3. 个人 Agent Profile；
 4. 旧聊天摘要。
@@ -68,7 +68,7 @@ Agent 结束前必须完成：
 
 写入个人 Profile 的内容必须跨项目长期有效，例如：
 
-- 用户偏好的解释方式；
+- Profile owner 偏好的解释方式；
 - UI 审美；
 - 工程工作法；
 - 反复出现的环境坑；
@@ -89,9 +89,9 @@ Agent 结束前必须完成：
 - 项目内错误复盘；
 - 本项目的验收证据。
 
-## 用户最小负担
+## Profile owner 最小负担
 
-用户只需要记一句：
+Profile owner 只需要记一句：
 
 ```text
 先读我的 Agent Profile，再处理当前项目。
@@ -102,3 +102,13 @@ Agent 结束前必须完成：
 ```text
 https://github.com/xixinikl/xixi-agent-profile
 ```
+
+更理想的目标是 Profile owner 连固定口令都不用背。只要 Profile owner 自然表达：
+
+- “按我的系统来”
+- “我要及时预览”
+- “继续这个项目”
+- “整理工作流”
+- “这个经验以后复用”
+
+Agent 就必须读取 `WORKFLOW_INDEX.md`，主动选择对应流程，而不是让 Profile owner 再粘贴一大段说明。

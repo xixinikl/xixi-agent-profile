@@ -33,6 +33,43 @@ xixi-dev-system projects discover \
 
 自动化只负责发现、索引、lint和生成候选，不得未经人工审阅直接修改Profile或业务仓库。
 
+## 自动摄取状态机
+
+项目复盘优先使用`templates/project-memory/RETROSPECTIVE.template.md`字段。旧版`错误复盘.md`仍可读取：
+
+```text
+needs_completion  缺场景、根因、规则或验证，不允许审阅晋升
+blocked_sensitive 检出密钥、Token、Cookie、密码或私钥；摘录脱敏并禁止审阅
+ready_for_review  字段完整，等待人工决定
+needs_re_review   原文在上次摄取后变化，旧审阅不能沿用
+project_only      人工确认只留项目
+rejected          人工拒绝
+approved_for_profile  通过跨项目/高影响纠正门禁，尚未发布
+published         已按候选ID幂等写入LEARNINGS.md
+```
+
+推荐命令：
+
+```bash
+xixi-dev-system learning harvest --owner xixinikl \
+  --project /path/to/project \
+  --registry /path/to/project/.xds/learning/registry.json
+
+xixi-dev-system learning review --owner xixinikl \
+  --registry /path/to/registry.json \
+  --candidate-id <id> --decision promote \
+  --reviewer "Profile owner" --reason "重复或高影响" \
+  --impact high --scope "适用项目" \
+  --rule "可执行规则" --verification "直接验证" \
+  --owner-corrected
+
+xixi-dev-system learning publish --owner xixinikl \
+  --registry /path/to/registry.json --candidate-id <id> \
+  --profile /path/to/xixi-agent-profile
+```
+
+`review`不会写Profile，`publish`只接受已审阅的`approved_for_profile`候选，并用候选ID防止重复发布。
+
 ## 已验证的长期规则
 
 ### 完成必须由同范围证据证明
